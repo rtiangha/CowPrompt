@@ -34,7 +34,7 @@ CowPrompt can be installed via binary package (.deb and .rpm provided via the [R
 2. Next, install the CowPrompt package.
 
 ### DEB-based Distributions (ex. Debian/Ubuntu, etc.)
-`sudo dpkg -i cowprompt.deb`
+`sudo dpkg -i cowprompt_0.1_all.deb`
 
 ### RPM-based Distributions (ex. Fedora/RHEL/CentOS/openSUSE, etc.)
 `sudo rpm -ivh cowprompt.rpm`
