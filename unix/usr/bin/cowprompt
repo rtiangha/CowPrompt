@@ -6,7 +6,11 @@
 #
 # Change 'Oblique' to any valid installed fortune file, or delete the fortune
 # option entirely to have xcowsay pull a random fortune message from all
-# available fortune files in the system.
+# available fortune files in the system. For example, to use Edition 1 of the
+# Oblique Strategies cards rather than the amalgam version, change the exec
+# command to:
+#
+# exec fortune Oblique-ed1 | xcowsay --config=/etc/cowprompt.config
 #
 # The cowprompt.config file is expected to be in /etc, but if it isn't,
 # edit the argument option to point to where the config file lives.
