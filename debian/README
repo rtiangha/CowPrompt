@@ -48,7 +48,10 @@ If it complains that you're missing dependencies because you forgot to install `
 and it will automatically fetch any missing dependencies.
 
 ### RPM-based Distributions (ex. Fedora/RHEL/CentOS/openSUSE, etc.)
-`sudo rpm -ivh cowprompt.rpm`
+`sudo rpm -ivh cowprompt-0.1-1.noarch.rpm`
+
+### Other Distributions
+Ensure that `xcowsay` and `fortune` are installed in your system (either through your distribution's package manager or by manually compiling it) and then copy the files in the `unix` directory of the CowPrompt project page to their equivalent places in your distribution's file system.
 
 ## How to Configure
 Options to change how/what CowPrompt displays are available via editing the `/etc/cowprompt.conf` file and/or the `/usr/bin/cowprompt` wrapper script. Instructions and examples are included within the files.
