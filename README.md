@@ -2,7 +2,7 @@
 **CowPrompt** is a simple wrapper program for `xcowsay` and `fortune` that can be used to display any message contained in a fortune data file to the screen.
 
 ## What it is for
-The main intent for CowPrompt is to display writing prompts for writers taking part in self-challenges such as [NaNoWriMo](https://nanowrimo.org), but can be used for any purpose where prompts need to be displayed on the screen on demand.
+The main intent for CowPrompt is to display writing prompts for writers taking part in self-challenges such as [NaNoWriMo](https://nanowrimo.org), but can be used for any purpose where prompts need to be displayed onto the screen on demand.
 
 ## Why does CowPrompt need to exist? Why not just use *xcowfortune* which is also installed with *xcowsay*, or use *xcowsay's* existing functionality?
 You could do that, but it would also pull from every fortune data file installed on the system by default (which may or may not be what you want). You could also pipe the output of fortune (or a specific fortune data file) through xcowsay
