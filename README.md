@@ -1,5 +1,5 @@
 # CowPrompt
-**CowPrompt** is a simple wrapper program for `xcowsay` and `fortune` that can be used to display any message contained in a fortune database to the screen.
+**CowPrompt** is a simple wrapper program for `xcowsay` and `fortune` that can be used to display any message contained in a fortune data file to the screen.
 
 ## What it is for
 The main intent for CowPrompt is to display writing prompts for writers taking part in self-challenges such as [NaNoWriMo](https://nanowrimo.org), but can be used for any purpose where prompts need to be displayed on the screen on demand.
