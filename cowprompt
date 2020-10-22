@@ -1,0 +1,17 @@
+#!/bin/sh
+
+# cowprompt is a wrapper program that invokes xcowsay to display a prompt
+# to the screen pulled from the list of valid fortunes available from the
+# system.
+#
+# Change 'Oblique' to any valid installed fortune file, or delete the fortune
+# option entirely to have xcowsay pull a random fortune message from all
+# available fortune files in the system.
+#
+# The cowprompt.config file is expected to be in /etc, but if it isn't,
+# edit the argument option to point to where the config file lives.
+
+exec fortune Oblique | xcowsay --config=/etc/cowprompt.config
+
+exit 1;
+
