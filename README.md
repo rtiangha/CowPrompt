@@ -4,13 +4,18 @@
 ## What it is for
 The main intent for CowPrompt is to display writing prompts for writers taking part in self-challenges such as [NaNoWriMo](https://nanowrimo.org), but can be used for any purpose where prompts need to be displayed onto the screen on demand.
 
-## Why does CowPrompt need to exist? Why not just use *xcowfortune* which is also installed with *xcowsay*, or use *xcowsay's* existing functionality?
-You could do that, but it would also pull from every fortune data file installed on the system by default (which may or may not be what you want). You could also pipe the output of fortune (or a specific fortune data file) through xcowsay
+## Why does CowPrompt need to exist? Why not just use `xcowfortune` which is also installed with `xcowsay`, or use `xcowsay's` existing functionality?
+You could do that, but it would also pull from every fortune data file installed on the system by default (which may or may not be what you want). You could also pipe the output of fortune (or a specific fortune data file) through `xcowsay`.
 
-However, I wanted a simple way to be able to: a.) Configure the command to use only one fortune data file rather than all of them in *specific* cases (in this case, a fortune data file that specifically contained various creative prompts to try and help me get through writer's block)), and more importantly, b.) be able to invoke the command through a launcher on the desktop, application menu, or quick launch panel rather than through the command line, hence the desire for a wrapper script. So I made one for myself and decided to share it. It needed a fancy name, and thus, `cowprompt` was born.
+However, I wanted a simple way to be able to:
+
+1. Configure the command to use only one fortune data file rather than all of them in *specific* cases (in this case, a fortune data file that specifically contained various creative prompts to try and help me get through writer's block)), and more importantly,
+2. Be able to invoke the command through a launcher on the desktop, application menu, or quick launch panel rather than through the command line, hence the desire for a wrapper script.
+
+So I made one for myself and decided to share it. It needed a fancy name, and thus, `cowprompt` was born.
 
 ## How it Works
-By default, CowPrompt displays quotes from a combined set of **Brian Eno's** *Oblique Strategies* cards (Editions 1-4 with duplicates removed), but CowPrompt can be configured to use any specific fortune data file.
+By default, CowPrompt displays quotes from a combined set of **Brian Eno's** [Oblique Strategies](https://en.wikipedia.org/wiki/Oblique_Strategies) cards (Editions 1-4 with duplicates removed, which is [available for viewing online](http://www.rtqe.net/ObliqueStrategies/Edition1-3.html)) in fortune data file format, but CowPrompt can be configured to use any specific fortune data file.
 
 Various display options can be configured through editing the `cowprompt.conf` file and the `cowprompt` wrapper executable script.
 
@@ -31,7 +36,7 @@ CowPrompt can be installed via binary package (.deb and .rpm provided via the [R
 ### openSUSE
 `sudo zypper install xcowsay fortune`
 
-2. Next, install the CowPrompt package.
+2. Next, install the **CowPrompt** package.
 
 ### DEB-based Distributions (ex. Debian/Ubuntu, etc.)
 `sudo dpkg -i cowprompt_0.1_all.deb`
@@ -40,7 +45,7 @@ CowPrompt can be installed via binary package (.deb and .rpm provided via the [R
 `sudo rpm -ivh cowprompt.rpm`
 
 ## How to Configure
-Options to to change how/what CowPrompt displays are available via editing the `/etc/cowprompt.conf` file and/or the `/usr/bin/cowprompt` wrapper script. Instructions and examples are included within the files.
+Options to change how/what CowPrompt displays are available via editing the `/etc/cowprompt.conf` file and/or the `/usr/bin/cowprompt` wrapper script. Instructions and examples are included within the files.
 
 ## How to Create New Prompts
 CowPrompt can pull from any message contained in a valid fortune data file installed on the system. There are many sources to get fortune data files. Your operating system distribution may have additional ones that you can install outside of the default set, or you can find many on the internet that other people have made as well.
@@ -55,7 +60,6 @@ Special thanks to Nick Gasson for creating [xcowsay](http://www.doof.me.uk/xcows
 ## LICENSE
 
 ```
-{
 
 This is free and unencumbered software released into the public domain.
 
@@ -82,6 +86,5 @@ OTHER DEALINGS IN THE SOFTWARE.
 
 For more information, please refer to <http://unlicense.org/> 
 
-}
 ```
 
