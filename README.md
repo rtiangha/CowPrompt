@@ -56,6 +56,9 @@ Ensure that `xcowsay` and `fortune` are installed in your system (either through
 ## How to Configure
 Options to change how/what CowPrompt displays are available via editing the `/etc/cowprompt.conf` file and/or the `/usr/bin/cowprompt` wrapper script. Instructions and examples are included within the files.
 
+## How to Use
+To display a random prompt, simply click on the CowPrompt application launcher in your window manager's application menu. You can also invoke it on the command line by typing `cowprompt` in a terminal.
+
 ## How to Create New Prompts
 CowPrompt can pull from any message contained in a valid fortune data file installed on the system. There are many sources to get fortune data files. Your operating system distribution may have additional ones that you can install outside of the default set, or you can find many on the internet that other people have made as well.
 
