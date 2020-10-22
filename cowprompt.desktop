@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Name=CowPrompt
+Comment=Display a prompt on the screen
+Exec=cowprompt
+Terminal=false
+X-MultipleArgs=false
+Type=Application
+Icon=/usr/share/icons/cow_small.png
+Categories=Office;
+StartupNotify=true
