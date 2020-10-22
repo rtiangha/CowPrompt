@@ -1,7 +1,7 @@
 # CowPrompt
 **CowPrompt** is a simple wrapper program for `xcowsay` and `fortune` that can be used to display any message contained in a fortune data file to the screen.
 
-## What it is for
+## What is it for?
 The main intent for CowPrompt is to display writing prompts for writers taking part in self-challenges such as [NaNoWriMo](https://nanowrimo.org), but can be used for any purpose where prompts need to be displayed onto the screen on demand.
 
 ## Why does CowPrompt need to exist? Why not just use `xcowfortune` which is also installed with `xcowsay`, or use `xcowsay's` existing functionality?
@@ -40,6 +40,11 @@ CowPrompt can be installed via binary package (.deb and .rpm provided via the [R
 
 ### DEB-based Distributions (ex. Debian/Ubuntu, etc.)
 `sudo dpkg -i cowprompt_0.1_all.deb`
+
+If it complains that you're missing dependencies because you forgot to install `xcowsay` and `fortune-mod`first, simply run:
+`sudo apt-get install -f`
+
+and it will automatically fetch any missing dependencies.
 
 ### RPM-based Distributions (ex. Fedora/RHEL/CentOS/openSUSE, etc.)
 `sudo rpm -ivh cowprompt.rpm`
