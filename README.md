@@ -5,11 +5,11 @@
 The main intent for CowPrompt is to display writing prompts for writers taking part in self-challenges such as [NaNoWriMo](https://nanowrimo.org), but can be used for any purpose where prompts need to be displayed onto the screen on demand.
 
 ## Why does CowPrompt need to exist? Why not just use `xcowfortune` which is also installed with `xcowsay`, or use `xcowsay's` existing functionality?
-You could do that, but it would also pull from every fortune data file installed on the system by default (which may or may not be what you want). You could also pipe the output of fortune (or a specific fortune data file) through `xcowsay`.
+You could do that, but it would also pull from every fortune data file installed on the system by default (which may or may not be what you want). You could also pipe the output of fortune (or a specific fortune data file) through `xcowsay` on the command line.
 
 However, I wanted a simple way to be able to:
 
-1. Configure the command to use only one fortune data file rather than all of them in *specific* cases (in this case, a fortune data file that specifically contained various creative prompts to try and help me get through writer's block)), and more importantly,
+1. Configure the command to use only one fortune data file rather than all of them in *specific* cases (in this case, a fortune data file that specifically contained various creative prompts to try and help me get through writer's block), and more importantly,
 2. Be able to invoke the command through a launcher on the desktop, application menu, or quick launch panel rather than through the command line, hence the desire for a wrapper script.
 
 So I made one for myself and decided to share it. It needed a fancy name, and thus, `cowprompt` was born.
@@ -25,7 +25,7 @@ CowPrompt can work on any Linux or Unix based system running an X Windows enviro
 ## How to Install
 CowPrompt can be installed via binary package (.deb and .rpm provided via the [Releases](https://github.com/rtiangha/CowPrompt/Releases) section), or by copying the various files to their respective places onto the file system.
 
-1. First, ensure that the software requirements (`xcowsay` and `fortune`) are installed first. Some examples on how are provided below.
+1. First, ensure that the software requirements (`xcowsay` and `fortune`) are installed first. Some examples on how to do so on various distributions are provided below.
 
 ### Debian/Ubuntu
 `sudo apt-get install xcowsay fortune-mod`
@@ -42,6 +42,7 @@ CowPrompt can be installed via binary package (.deb and .rpm provided via the [R
 `sudo dpkg -i cowprompt_0.1_all.deb`
 
 If it complains that you're missing dependencies because you forgot to install `xcowsay` and `fortune-mod`first, simply run:
+
 `sudo apt-get install -f`
 
 and it will automatically fetch any missing dependencies.
