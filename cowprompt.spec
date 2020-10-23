@@ -53,5 +53,5 @@ rm -rf $RPM_BUILD_ROOT/etc
 - Initial Release.
 
 # Build with the following syntax from the root GitHub project directory:
-# rpmbuild --target noarch -bb ~/rpmbuild/SSPECS/cowprompt.spec
+# rpmbuild --target noarch -bb ~/rpmbuild/SPECS/cowprompt.spec
 
