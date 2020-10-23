@@ -67,7 +67,7 @@ Creating your own is easy too. For example, [here is a tutorial](http://bradthem
 Once you've obtained or created your own custom fortune text and `.dat` files, make sure to copy them to where the other fortune data files live on your system (usually in `/usr/share/games/fortunes` but your distribution may vary) and then edit the `/usr/bin/cowprompt` wrapper script to use it instead of the default `Oblique` file.
 
 ## CREDITS
-Special thanks to Nick Gasson for creating [xcowsay](http://www.doof.me.uk/xcowsay) as a super-simple way to output text to a screen in a graphical way.
+Special thanks to Nick Gasson for creating [xcowsay](http://www.doof.me.uk/xcowsay) as a super-simple way to output text to a screen in a graphical way, and to [The Oblique Strategies](http://www.rtqe.net/ObliqueStrategies/) website for making the text of Editions 1-4 available for [online viewing](http://www.rtqe.net/ObliqueStrategies/Edition1-3.html) .
 
 ## LICENSE
 
