@@ -59,6 +59,28 @@ Options to change how/what CowPrompt displays are available via editing the `/et
 ## How to Use
 To display a random prompt, simply click on the CowPrompt application launcher in your window manager's application menu. You can also invoke it on the command line by typing `cowprompt` in a terminal. To make access easier, you may want to consider adding shortcuts to your Desktop or Quick Launch panel.
 
+## Included Prompts
+CowPrompt is configured by default to use the `Oblique` data set, which includes all of the strategies included in Editions 1 through 4 of Oblique Strategies, minus the duplicates. Included in the CowPrompt package are the following data files:
+
+### Oblique Strategies
+- `Oblique`:  All of the Oblique Strategies from Edition 1-4
+- `Oblique-ed1`:  Oblique Strategies, Edition 1
+- `Oblique-ed2`:  Oblique Strategies, Edition 2
+- `Oblique-ed3`:  Oblique Strategies, Edition 3
+- `Oblique-ed4`:  Oblique Strategies, Edtion 4
+
+### [Other Strategies](http://www.rtqe.net/ObliqueStrategies/EditionOther.html):
+- `Acute`:  [The Acute Strategies](http://www.rtqe.net/ObliqueStrategies/Acute.html) (Strategies submitted by Oblique Strategies fans)
+- `Diary`:  Strategies included in Brian Eno's diary
+- `Signal`: Strategies published in *Signal: A whole earth catalog - Communication Tools for the Information Age (ed. Kevin Kelly, fwd by Stewart Brand, 1988, Harmony Books, P. 17)*
+
+### Everything
+- `Complete`:  A data file that combines all of the data sets above. 
+
+To switch data files, edit the `/usr/bin/cowprompt` file and change the `DECKNAME` variable to use the name of the deck that you want. For example:
+
+`DECKNAME=Complete`
+
 ## How to Create New Prompts
 CowPrompt can pull from any message contained in a valid fortune data file installed on the system. There are many sources to get fortune data files. Your operating system distribution may have additional ones that you can install outside of the default set, or you can find many on the internet that other people have made as well.
 

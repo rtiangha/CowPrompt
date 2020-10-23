@@ -77,6 +77,10 @@ CowPrompt is configured by default to use the `Oblique` data set, which includes
 ### Everything
 - `Complete`:  A data file that combines all of the data sets above. 
 
+To switch data files, edit the `/usr/bin/cowprompt` file and change the `DECKNAME` variable to use the name of the deck that you want. For example:
+
+`DECKNAME=Complete`
+
 ## How to Create New Prompts
 CowPrompt can pull from any message contained in a valid fortune data file installed on the system. There are many sources to get fortune data files. Your operating system distribution may have additional ones that you can install outside of the default set, or you can find many on the internet that other people have made as well.
 
