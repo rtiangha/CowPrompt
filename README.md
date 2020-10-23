@@ -39,7 +39,7 @@ CowPrompt can be installed via binary package (.deb and .rpm provided via the [R
 2. Next, install the **CowPrompt** package.
 
 ### DEB-based Distributions (ex. Debian/Ubuntu, etc.)
-`sudo dpkg -i cowprompt_0.1_all.deb`
+`sudo dpkg -i cowprompt_0.1-1_all.deb`
 
 If it complains that you're missing dependencies because you forgot to install `xcowsay` and `fortune-mod`first, simply run:
 
