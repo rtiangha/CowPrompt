@@ -1,3 +1,11 @@
+cowprompt (0.2-1) stable; urgency=medium
+  
+  * Switch to using variable names rather than hard coded values
+  * Add additional data files based on other strategies (see
+    http://www.rtqe.net/ObliqueStrategies/EditionOther.html )
+
+ -- Reg Tiangha <reg@reginaldtiangha.com>  Fri, 23 Oct 2020 16:39:24 -0600
+
 cowprompt (0.1-1) stable; urgency=medium
 
   * Initial Release.

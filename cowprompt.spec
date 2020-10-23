@@ -7,7 +7,7 @@
 ###############################################################################
 Summary: CowPrompt is a wrapper for xcowsay and fortune to display prompts on the screen.
 Name: cowprompt
-Version: 0.1
+Version: 0.2
 Release: 1
 License: Unlicense
 URL: https://github.com/rtiangha/CowPrompt
@@ -49,6 +49,10 @@ rm -rf $RPM_BUILD_ROOT/etc
 
 
 %changelog
+* Fri Oct 23 2020 Reg Tiangha <reg@reginaldtiangha.com> 0.2-1
+- Switch to using variable names rather than hard coded values
+- Add additional data files based on other strategies (see http://www.rtqe.net/ObliqueStrategies/EditionOther.html )
+
 * Thu Oct 22 2020 Reg Tiangha <reg@reginaldtiangha.com> 0.1-1
 - Initial Release.
 
