@@ -4,18 +4,33 @@
 # to the screen pulled from the list of valid fortunes available from the
 # system.
 #
-# Change 'Oblique' to any valid installed fortune file, or delete the fortune
-# option entirely to have xcowsay pull a random fortune message from all
-# available fortune files in the system. For example, to use Edition 1 of the
-# Oblique Strategies cards rather than the amalgam version, change the exec
-# command to:
+# Change 'Oblique' to any valid installed fortune file (or its file path),
+# or delete the fortune option entirely to have xcowsay pull a random fortune
+# message from all available fortune files in the system. For example, to use 
+# Edition 1 of the Oblique Strategies cards rather than the amalgam version, 
+# change the DECKNAME variable to:
+# 
+# DECKNAME=Oblique-ed1
 #
-# exec fortune Oblique-ed1 | xcowsay --config=/etc/cowprompt.config
+# or if your fortune data set lives in a different directory than the default
+# (ex. /opt/fortunes), then enter the full file path like so:
 #
-# The cowprompt.config file is expected to be in /etc, but if it isn't,
-# edit the argument option to point to where the config file lives.
+# DECKNAME=/opt/fortunes/Oblique-ed1
+# 
+# To pull from all availablly installed fortune data files, leave DECKNAME blank:
+# 
+# DECKNAME=
+#
 
-exec fortune Oblique | xcowsay --config=/etc/cowprompt.config
+DECKNAME=Oblique
+
+# The cowprompt.config file is expected to be in /etc, but if it isn't or you
+# have written and stored your own elsewhere, edit the CONFIGFILE variable
+# to point to where the config file lives.
+
+CONFIGFILE=/etc/cowprompt.config
+
+exec fortune $DECKNAME | xcowsay --config=$CONFIGFILE
 
 exit 1;
 
