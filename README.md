@@ -1,5 +1,5 @@
 # CowPrompt
-**CowPrompt** is a simple wrapper script for `xcowsay` and `fortune` that can be used to display any message contained in a single, specific fortune data file to the screen.
+**CowPrompt** is a simple wrapper script for `xcowsay` (or `cowsay`) and `fortune` that can be used to display any message contained in a single, specific fortune data file to the screen.
 
 It comes in two versions. `cowprompt` displays prompts to any screen using an X Windows environment, can `cowprompt-cli` displays prompts to terminal screens.
 
