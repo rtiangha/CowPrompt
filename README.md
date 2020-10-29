@@ -22,6 +22,8 @@ Various display options including display position and image file can be configu
 ## Dependencies
 CowPrompt can work on any Linux or Unix based system running an X Windows environment that has [xcowsay](https://github.com/nickg/xcowsay) and [fortune](https://en.wikipedia.org/wiki/Fortune_(Unix)) (or [fortune-mod](https://github.com/shlomif/fortune-mod)) available and installed on the system.
 
+The CowPrompt package also requires `cowprompt-data` to be installed alongside.
+
 ## How to Install
 CowPrompt can be installed via binary package (.deb and .rpm provided via the [Releases](https://github.com/rtiangha/CowPrompt/Releases) section), or by copying the various files to their respective places onto the file system.
 
@@ -36,10 +38,10 @@ CowPrompt can be installed via binary package (.deb and .rpm provided via the [R
 ### openSUSE
 `sudo zypper install xcowsay fortune`
 
-2. Next, install the **CowPrompt** package.
+2. Next, install the **CowPrompt** and **cowprompt-data** packages.
 
 ### DEB-based Distributions (ex. Debian/Ubuntu, etc.)
-`sudo dpkg -i cowprompt_0.1-1_all.deb`
+`sudo dpkg -i cowprompt_<VERSION>.deb cowprompt-data_<VERSION>.deb`
 
 If it complains that you're missing dependencies because you forgot to install `xcowsay` and `fortune-mod`first, simply run:
 
@@ -48,7 +50,7 @@ If it complains that you're missing dependencies because you forgot to install `
 and it will automatically fetch any missing dependencies.
 
 ### RPM-based Distributions (ex. Fedora/RHEL/CentOS/openSUSE, etc.)
-`sudo rpm -ivh cowprompt-0.1-1.noarch.rpm`
+`sudo rpm -ivh cowprompt-<VERSION>.noarch.rpm cowprompt-data-<VERSION>.noarch.rpm`
 
 ### Other Distributions
 Ensure that `xcowsay` and `fortune` are installed in your system (either through your distribution's package manager or by manually compiling it) and then copy the files in the `unix` directory of the CowPrompt project page to their equivalent places in your distribution's file system.
