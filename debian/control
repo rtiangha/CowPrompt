@@ -10,6 +10,6 @@ Homepage: https://github.com/rtiangha/CowPrompt
 
 Package: cowprompt
 Architecture: all
-Depends: xcowsay, fortune-mod, ${misc:Depends}
+Depends: xcowsay, fortune-mod, cowprompt-data, ${misc:Depends}
 Description: Break through creative blocks with CowPrompt.
  CowPrompt can display various creative prompts onto the screen on demand..

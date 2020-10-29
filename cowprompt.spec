@@ -17,6 +17,7 @@ Group: Games
 Packager: Reg Tiangha
 Requires: xcowsay
 Requires: (fortune-mod or fortune)
+Requires: cowprompt-data
 BuildRoot: rpmbuild
 
 %description
@@ -32,7 +33,6 @@ mkdir -p $RPM_BUILD_ROOT/usr/bin/
 mkdir -p $RPM_BUILD_ROOT/usr/share/applications
 mkdir -p $RPM_BUILD_ROOT/usr/share/icons
 mkdir -p $RPM_BUILD_ROOT/usr/share/man/man6
-mkdir -p $RPM_BUILD_ROOT/usr/share/games/fortunes
 mkdir -p $RPM_BUILD_ROOT/etc
 
 cp -a ../SOURCES/unix/etc/cowprompt.config $RPM_BUILD_ROOT/etc/
@@ -40,7 +40,6 @@ cp -a ../SOURCES/unix/usr/bin/cowprompt $RPM_BUILD_ROOT/usr/bin/
 cp -a ../SOURCES/unix/usr/share/man/man6/cowprompt.6.gz $RPM_BUILD_ROOT/usr/share/man/man6/
 cp -a ../SOURCES/unix/usr/share/icons/cow_small.png $RPM_BUILD_ROOT/usr/share/icons/
 cp -a ../SOURCES/unix/usr/share/applications/cowprompt.desktop $RPM_BUILD_ROOT/usr/share/applications/
-cp -a ../SOURCES/unix/usr/share/games/fortunes/* $RPM_BUILD_ROOT/usr/share/games/fortunes/
 
 exit
 
