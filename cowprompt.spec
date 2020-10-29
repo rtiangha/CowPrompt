@@ -34,7 +34,7 @@ mkdir -p $RPM_BUILD_ROOT/usr/share/icons
 mkdir -p $RPM_BUILD_ROOT/usr/share/man/man6
 mkdir -p $RPM_BUILD_ROOT/etc
 
-cp -ar ../../unix/* $RPM_BUILD_ROOT/
+cp -ar ../SOURCES/unix/* $RPM_BUILD_ROOT/
 
 exit
 
