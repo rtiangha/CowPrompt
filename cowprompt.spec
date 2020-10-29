@@ -30,13 +30,17 @@ CowPrompt is a simple wrapper program for xcowsay and fortune that can be used t
 echo "BUILDROOT = $RPM_BUILD_ROOT"
 mkdir -p $RPM_BUILD_ROOT/usr/bin/
 mkdir -p $RPM_BUILD_ROOT/usr/share/applications
-mkdir -p $RPM_BUILD_ROOT/usr/share/applications
-mkdir -p $RPM_BUILD_ROOT/usr/share/games/fortunes
 mkdir -p $RPM_BUILD_ROOT/usr/share/icons
 mkdir -p $RPM_BUILD_ROOT/usr/share/man/man6
+mkdir -p $RPM_BUILD_ROOT/usr/share/games/fortunes
 mkdir -p $RPM_BUILD_ROOT/etc
 
-cp -ar ../SOURCES/unix/* $RPM_BUILD_ROOT/
+cp -a ../SOURCES/unix/etc/cowprompt.config $RPM_BUILD_ROOT/etc/
+cp -a ../SOURCES/unix/usr/bin/cowprompt $RPM_BUILD_ROOT/usr/bin/
+cp -a ../SOURCES/unix/usr/share/man/man6/cowprompt.6x.gz $RPM_BUILD_ROOT/usr/share/man/man6/
+cp -a ../SOURCES/unix/usr/share/icons/cow_small.png $RPM_BUILD_ROOT/usr/share/icons/
+cp -a ../SOURCES/unix/usr/share/applications/cowprompt.desktop $RPM_BUILD_ROOT/usr/share/applications/
+cp -a ../SOURCES/unix/usr/share/games/fortunes/* $RPM_BUILD_ROOT/usr/share/games/fortunes/
 
 exit
 
@@ -46,8 +50,7 @@ exit
 %attr(0644, root, root) /usr/share/*
 
 %clean
-rm -rf $RPM_BUILD_ROOT/usr
-rm -rf $RPM_BUILD_ROOT/etc
+rm -rf $RPM_BUILD_ROOT
 
 
 %changelog
