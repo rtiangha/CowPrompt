@@ -69,7 +69,7 @@ CowPrompt is configured by default to use the `Oblique` data set, which includes
 - `Oblique-ed3`:  Oblique Strategies, Edition 3
 - `Oblique-ed4`:  Oblique Strategies, Edtion 4
 
-### [Other Strategies](http://www.rtqe.net/ObliqueStrategies/EditionOther.html):
+### [Other Strategies](http://www.rtqe.net/ObliqueStrategies/EditionOther.html)
 - `Acute`:  [The Acute Strategies](http://www.rtqe.net/ObliqueStrategies/Acute.html) (Strategies submitted by Oblique Strategies fans)
 - `Diary`:  Strategies included in Brian Eno's diary
 - `Signal`: Strategies published in *Signal: A whole earth catalog - Communication Tools for the Information Age (ed. Kevin Kelly, fwd by Stewart Brand, 1988, Harmony Books, P. 17)*
@@ -79,7 +79,9 @@ CowPrompt is configured by default to use the `Oblique` data set, which includes
 
 To switch data files, edit the `/usr/bin/cowprompt` file and change the `DECKNAME` variable to use the name of the deck that you want. For example:
 
-`DECKNAME=Complete`
+```
+DECKNAME=Complete
+```
 
 ## How to Create New Prompts
 CowPrompt can pull from any message contained in a valid fortune data file installed on the system. There are many sources to get fortune data files. Your operating system distribution may have additional ones that you can install outside of the default set, or you can find many on the internet that other people have made as well.
@@ -96,11 +98,26 @@ Special thanks to Nick Gasson for creating [xcowsay](http://www.doof.me.uk/xcows
 ```
 This is free and unencumbered software released into the public domain.
 
-Anyone is free to copy, modify, publish, use, compile, sell, or distribute this software, either in source code form or as a compiled binary, for any purpose, commercial or non-commercial, and by any means.
+Anyone is free to copy, modify, publish, use, compile, sell, or
+distribute this software, either in source code form or as a compiled
+binary, for any purpose, commercial or non-commercial, and by any
+means.
 
-In jurisdictions that recognize copyright laws, the author or authors of this software dedicate any and all copyright interest in the software to the public domain. We make this dedication for the benefit of the public at large and to the detriment of our heirs and successors. We intend this dedication to be an overt act of relinquishment in perpetuity of all present and future rights to this software under copyright law.
+In jurisdictions that recognize copyright laws, the author or authors
+of this software dedicate any and all copyright interest in the
+software to the public domain. We make this dedication for the benefit
+of the public at large and to the detriment of our heirs and
+successors. We intend this dedication to be an overt act of
+relinquishment in perpetuity of all present and future rights to this
+software under copyright law.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR
+OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
+ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+OTHER DEALINGS IN THE SOFTWARE.
 
 For more information, please refer to <http://unlicense.org/> 
 ```
