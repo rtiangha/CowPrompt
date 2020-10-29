@@ -1,5 +1,5 @@
-Source: cowprompt
-Section: utils
+Source: cowprompt-data
+Section: misc
 Priority: optional
 Maintainer: Reg Tiangha <reg@reginaldtiangha.com>
 Build-Depends: debhelper-compat (= 12)
@@ -8,8 +8,8 @@ Homepage: https://github.com/rtiangha/CowPrompt
 #Vcs-Browser: https://salsa.debian.org/debian/cowprompt
 #Vcs-Git: https://salsa.debian.org/debian/cowprompt.git
 
-Package: cowprompt
+Package: cowprompt-data
 Architecture: all
-Depends: xcowsay, fortune-mod, cowprompt-data, ${misc:Depends}
-Description: Break through creative blocks with CowPrompt.
- CowPrompt can display various creative prompts onto the screen on demand..
+Depends: fortune-mod, ${misc:Depends}
+Description: Fortune data files for CowPrompt.
+ These data files can be used with CowPrompt and/or fortune.
