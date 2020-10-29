@@ -1,5 +1,5 @@
 Source: cowprompt
-Section: games
+Section: utils
 Priority: optional
 Maintainer: Reg Tiangha <reg@reginaldtiangha.com>
 Build-Depends: debhelper-compat (= 12)
@@ -11,6 +11,5 @@ Homepage: https://github.com/rtiangha/CowPrompt
 Package: cowprompt
 Architecture: all
 Depends: xcowsay, fortune-mod, ${misc:Depends}
-Description: CowPrompt is a wrapper for xcowsay and fortune to display prompts.
- CowPrompt is a simple wrapper program for xcowsay and fortune that can be used to display any message contained in a fortune data file to the screen.
- The main intent for CowPrompt is to display writing prompts for writers taking part in self-challenges, but can be used for any purpose where prompts need to be displayed onto the screen on demand.
+Description: Break through creative blocks with CowPrompt.
+ CowPrompt can display various creative prompts onto the screen on demand..
