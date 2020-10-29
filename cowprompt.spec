@@ -1,9 +1,11 @@
 ###############################################################################
 # Spec file for cowprompt
 # Assumes that:
-# - 'rpmbuild' directory is in {$HOME} (with proper structure)
-# - 'unix' directory from project is in {$HOME} as well (i.e. same level as
-#   rpmbuild director)
+# - 'rpmbuild' directory is in {$HOME} (with proper structure; i.e. BUILD, ,
+#    BUILDROOT, RPMS, SOURCES, SPECS, SRPMS))
+# - 'unix' directory from project is symlinked into rpmbuild/SOURCES 
+#    i.e
+#        ln -s CowPrompt/unix ~/rpmbuild/SOURCES/unix
 ###############################################################################
 Summary: CowPrompt is a wrapper for xcowsay and fortune to display prompts on the screen.
 Name: cowprompt
@@ -56,6 +58,6 @@ rm -rf $RPM_BUILD_ROOT/etc
 * Thu Oct 22 2020 Reg Tiangha <reg@reginaldtiangha.com> 0.1-1
 - Initial Release.
 
-# Build with the following syntax from the root GitHub project directory:
-# rpmbuild --target noarch -bb ~/rpmbuild/SPECS/cowprompt.spec
+# Build with the following syntax from the root of the CowPrompt project directory:
+# rpmbuild --target noarch -bb cowprompt.spec
 
