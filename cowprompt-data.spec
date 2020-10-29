@@ -9,7 +9,7 @@
 ###############################################################################
 Summary: cowprompt-data contains the data files used for CowPrompt, a wrapper for xcowsay and fortune to display prompts on the screen.
 Name: cowprompt-data
-Version: 0.1
+Version: 1.0 
 Release: 1
 License: Unlicense
 URL: https://github.com/rtiangha/CowPrompt
@@ -19,7 +19,7 @@ Requires: (fortune-mod or fortune)
 BuildRoot: rpmbuild
 
 %description
-cowprompt-data contains the data files used for CowPrompt, a simple wrapper program for xcowsay and fortune that can be used to display any message contained in a fortune data file to the screen. Can also be used alone with fortune.
+cowprompt-data contains the data files used for CowPrompt, a simple wrapper program for xcowsay (or cowsay) and fortune that can be used to display any message contained in a fortune data file to the screen. Can also be used alone with fortune.
 
 %prep
 ################################################################################
@@ -41,7 +41,7 @@ rm -rf $RPM_BUILD_ROOT
 
 
 %changelog
-* Thu Oct 29 2020 Reg Tiangha <reg@reginaldtiangha.com> 0.1-1
+* Thu Oct 29 2020 Reg Tiangha <reg@reginaldtiangha.com> 1.0-1
 - Initial Release.
 
 # Build with the following syntax from the root of the CowPrompt project directory:

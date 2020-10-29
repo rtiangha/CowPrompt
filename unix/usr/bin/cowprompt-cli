@@ -1,0 +1,39 @@
+#!/bin/sh
+
+# cowprompt-cli is a wrapper program that invokes cowsay to display a prompt
+# to the screen pulled from the list of valid fortunes available from the
+# system.
+#
+# You may also use any of the standard cowsay command line options to change
+# the look of the cow. See the cowsay(6) man page for more information.
+#
+# Change 'Oblique' to any valid installed fortune file (or its file path),
+# or delete the fortune option entirely to have xcowsay pull a random fortune
+# message from all available fortune files in the system. For example, to use 
+# Edition 1 of the Oblique Strategies cards rather than the amalgam version, 
+# change the DECKNAME variable to:
+# 
+# DECKNAME=Oblique-ed1
+#
+# or if your fortune data set lives in a different directory than the default
+# (ex. /opt/fortunes), then enter the full file path like so:
+#
+# DECKNAME=/opt/fortunes/Oblique-ed1
+# 
+# To pull from all availablly installed fortune data files, leave DECKNAME blank:
+# 
+# DECKNAME=
+#
+
+DECKNAME=Oblique
+
+# The cowsay program takes command line options to modify the look of the cow.
+# If you wish to change how the cow looks, enter the options below. See the
+# cowsay(6) man page for more information.
+
+ARGS="-e oO -T U"
+
+exec fortune $DECKNAME | cowsay $ARGS
+
+exit 1;
+

@@ -1,0 +1,5 @@
+unix/etc/cowprompt.config etc/
+unix/usr/bin/cowprompt usr/bin/
+unix/usr/share/man/man6/cowprompt.6.gz usr/share/man/man6/
+unix/usr/share/icons/cow_small.png usr/share/icons/
+unix/usr/share/applications/cowprompt.desktop usr/share/applications/

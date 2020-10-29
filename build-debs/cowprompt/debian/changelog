@@ -1,3 +1,10 @@
+cowprompt (1.0-1) unstable; urgency=medium
+
+  * Separate out fortune data files to a separate package.
+  * Now requires the additional installation of the cowprompt-data package.
+
+ -- Reg Tiangha <reg@reginaldtiangha.com>  Thu, 29 Oct 2020 16:59:55 -0600
+
 cowprompt (0.2-1) unstable; urgency=medium
   
   * Switch to using variable names rather than hard coded values

@@ -1,0 +1,15 @@
+Source: cowprompt-cli
+Section: utils
+Priority: optional
+Maintainer: Reg Tiangha <reg@reginaldtiangha.com>
+Build-Depends: debhelper-compat (= 12)
+Standards-Version: 4.4.1
+Homepage: https://github.com/rtiangha/CowPrompt
+#Vcs-Browser: https://salsa.debian.org/debian/cowprompt
+#Vcs-Git: https://salsa.debian.org/debian/cowprompt.git
+
+Package: cowprompt-cli
+Architecture: all
+Depends: xcowsay, fortune-mod, cowprompt-data, ${misc:Depends}
+Description: Break through creative blocks with CowPrompt.
+ cowprompt-cli can display various creative prompts onto a terminal screen.

@@ -1,0 +1,7 @@
+.debhelper/
+debhelper-build-stamp
+files
+cowprompt/
+cowprompt.postinst.debhelper
+cowprompt.postrm.debhelper
+cowprompt.substvars
