@@ -38,21 +38,21 @@ CowPrompt can be installed via binary package (.deb and .rpm provided via the [R
 ### Debian/Ubuntu
 `sudo apt-get install xcowsay fortune-mod`
 
-OR/AND
+   OR/AND
 
 `sudo apt-get install cowsay fortune-mod`
 
 ### Fedora/RHEL/CentOS
 `sudo dnf install xcowsay fortune-mod`
 
-OR/AND
+   OR/AND
 
 `sudo dnf install cowsay fortune-mod`
 
 ### openSUSE
 `sudo zypper install xcowsay fortune`
 
-OR/AND
+   OR/AND
 
 `sudo zypper install cowsay fortune`
 
@@ -61,7 +61,7 @@ OR/AND
 ### DEB-based Distributions (ex. Debian/Ubuntu, etc.)
 `sudo dpkg -i cowprompt_<VERSION>.deb cowprompt-data_<VERSION>.deb`
 
-OR/AND
+   OR/AND
 
 `sudo dpkg -i cowprompt-cli_<VERSION>.deb cowprompt-data_<VERSION>.deb`
 
@@ -74,12 +74,27 @@ and it will automatically fetch any missing dependencies.
 ### RPM-based Distributions (ex. Fedora/RHEL/CentOS/openSUSE, etc.)
 `sudo rpm -ivh cowprompt-<VERSION>.noarch.rpm cowprompt-data-<VERSION>.noarch.rpm`
 
-OR/AND
+   OR/AND
 
 `sudo rpm -ivh cowprompt-cli-<VERSION>.noarch.rpm cowprompt-data-<VERSION>.noarch.rpm`
 
 ### Other Distributions
-Ensure that `xcowsay` (or/and `cowsay`) and `fortune` are installed in your system (either through your distribution's package manager or by manually compiling it) and then copy the files in the `unix` directory of the CowPrompt project page to their equivalent places in your distribution's file system.
+Ensure that `xcowsay` (or/and `cowsay`) and `fortune` are installed in your system (either through your distribution's package manager or by manually compiling it). Then, you can use the included `Makefile` to install/uninstall the various pieces of CowPrompt.
+
+1. Edit the various Configuration Options in the `Makefile` to point to the proper paths in your file system.
+2. To install:
+      Install cowprompt:         `make install-cowprompt`
+      Install cowprompt-cli:     `make install-cowprompt-cli`
+      Install cowprompt-data:    `make install-cowprompt-data`
+      Install everything:        `make install`
+
+3. To uninstall:
+      Uninstall cowprompt:       `make uninstall-cowprompt`
+      Uninstall cowprompt-cli:   `make uninstall-cowprompt-cli`
+      Uninstall cowprompt-data:  `make uninstall-cowprompt-data`
+      Uninstall everything:      `make uninstall`
+
+Alternatively, copy the files in the `unix` directory of the CowPrompt project page to their equivalent places in your distribution's file system.
 
 ## How to Configure
 Options to change how/what CowPrompt displays are available via editing the `/etc/cowprompt.conf` file and/or the `/usr/bin/cowprompt` wrapper script for the graphical version, or the `/usr/bin/cowprompt-cli` wrapper script for the command line version. Instructions and examples are included within the files.
@@ -111,9 +126,7 @@ By default, CowPrompt is configured by default to use the `Oblique` data set, wh
 
 To switch data files, edit the `/usr/bin/cowprompt` file and change the `DECKNAME` variable to use the name of the deck that you want. For example:
 
-```
-DECKNAME=Complete
-```
+    DECKNAME=Complete
 
 ## How to Create New Prompts
 CowPrompt can pull from any message contained in a valid fortune data file installed on the system. There are many sources to get fortune data files. Your operating system distribution may have additional ones that you can install outside of the default set, or you can find many on the internet that other people have made as well.
