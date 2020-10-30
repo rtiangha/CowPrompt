@@ -83,16 +83,15 @@ Ensure that `xcowsay` (or/and `cowsay`) and `fortune` are installed in your syst
 
 1. Edit the various Configuration Options in the `Makefile` to point to the proper paths in your file system.
 2. To install:
-      Install cowprompt:         `make install-cowprompt`
-      Install cowprompt-cli:     `make install-cowprompt-cli`
-      Install cowprompt-data:    `make install-cowprompt-data`
-      Install everything:        `make install`
-
+- Install cowprompt:         `make install-cowprompt`
+- Install cowprompt-cli:     `make install-cowprompt-cli`
+- Install cowprompt-data:    `make install-cowprompt-data`
+- Install everything:        `make install`
 3. To uninstall:
-      Uninstall cowprompt:       `make uninstall-cowprompt`
-      Uninstall cowprompt-cli:   `make uninstall-cowprompt-cli`
-      Uninstall cowprompt-data:  `make uninstall-cowprompt-data`
-      Uninstall everything:      `make uninstall`
+- Uninstall cowprompt:       `make uninstall-cowprompt`
+- Uninstall cowprompt-cli:   `make uninstall-cowprompt-cli`
+- Uninstall cowprompt-data:  `make uninstall-cowprompt-data`
+- Uninstall everything:      `make uninstall`
 
 Alternatively, copy the files in the `unix` directory of the CowPrompt project page to their equivalent places in your distribution's file system.
 
