@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## Fri Oct 30 2020  Version 1.0.1-1
+
+ - Minor updates to documentation
+
 ## Thu Oct 29 2020  Version 1.0-1
 
 - Separate out fortune data files from `cowprompt`to a separate package (`cowprompt-data`).

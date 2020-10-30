@@ -1,3 +1,9 @@
+cowprompt-cli (1.0.1-1) UNRELEASED; urgency=medium
+
+  * Minor updates to documentation.
+
+ -- Reg Tiangha <reg@reginaldtiangha.com>  Fri, 30 Oct 2020 12:07:08 -0600
+
 cowprompt-cli (1.0-1) unstable; urgency=medium
 
   * Initial release. 
