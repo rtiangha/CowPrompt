@@ -1,7 +1,7 @@
 # CowPrompt
 **CowPrompt** is a simple wrapper script for `xcowsay` (or `cowsay`) and `fortune` that can be used to display any message contained in a single, specific fortune data file to the screen.
 
-It comes in two versions. `cowprompt` displays prompts to any screen using an X Windows environment, can `cowprompt-cli` displays prompts to terminal screens.
+It comes in two versions. `cowprompt` displays prompts to any screen using an X Windows environment, and `cowprompt-cli` displays prompts to terminal screens.
 
 ## What is it for?
 The main intent for CowPrompt is to display writing or creative prompts for writers taking part in self-challenges such as [NaNoWriMo](https://nanowrimo.org), but can also be used for any purpose where prompts or messages need to be displayed onto the screen on demand.
@@ -28,12 +28,12 @@ Display options for `cowprompt-cli` can be modified using the standard `cowsay` 
 
 `cowprompt-cli` can work on any terminal system that has fortune (or fortune-mod) installed.
 
-Both CowPrompt packages also require the `cowprompt-data` to be installed alongside.
+Both CowPrompt packages also require the `cowprompt-data` to be installed alongside. However, `cowprompt-data` can be installed on its own in case you only want access to the data sets to use with `fortune`.
 
 ## How to Install
-CowPrompt can be installed via binary package (.deb and .rpm provided via the [Releases](https://github.com/rtiangha/CowPrompt/Releases) section), or by copying the various files to their respective places onto the file system.
+CowPrompt can be installed via binary package (.deb and .rpm provided via the [Releases](https://github.com/rtiangha/CowPrompt/Releases) section), or by copying the various files in the `unix` directory to their respective places onto the file system.
 
-1. First, ensure that the software requirements (`xcowsay` and `fortune` for the graphical version, `cowsay` and `fortune` for the command line version)) are installed first. Some examples on how to do so on various distributions are provided below.
+1. First, ensure that the software requirements (`xcowsay` and `fortune` for the graphical version, `cowsay` and `fortune` for the command line version) are installed first. Some examples on how to do so on various distributions are provided below.
 
 ### Debian/Ubuntu
 `sudo apt-get install xcowsay fortune-mod`
@@ -90,7 +90,7 @@ For the graphical version, to display a random prompt, simply click on the CowPr
 For the command line version, type `cowprompt-cli` in a terminal window. You can also [alias](https://www.computerworld.com/article/2598087/how-to-use-aliases-in-linux-shell-commands.html) the command to something shorter to make access easier.
 
 ## Included Prompts
-CowPrompt requires the `cowprompt-data` package to be installed as well.
+**NOTE**: CowPrompt now requires the `cowprompt-data` package to be installed as well.
 
 By default, CowPrompt is configured by default to use the `Oblique` data set, which includes all of the strategies included in Editions 1 through 4 of Oblique Strategies, minus the duplicates. Included in the CowPrompt package are the following data files:
 
@@ -123,7 +123,7 @@ Creating your own is easy too. For example, [here is a tutorial](http://bradthem
 Once you've obtained or created your own custom fortune text and `.dat` files, make sure to copy them to where the other fortune data files live on your system (usually in `/usr/share/games/fortunes` but your distribution may vary) and then edit the `/usr/bin/cowprompt` wrapper script to use it instead of the default `Oblique` file (for example, replace `Oblique` with `Oblique-ed3` to specifically pull from Oblique Strategies, 3rd Edition).
 
 ## CREDITS
-Special thanks to Nick Gasson for creating [xcowsay](http://www.doof.me.uk/xcowsay) as a super-simple way to output text to a screen in a graphical way, to Tony Monroe for creating the original [cowsay](https://github.com/tnalpgge/rank-amateur-cowsay) terminal program, and to [The Oblique Strategies](http://www.rtqe.net/ObliqueStrategies/) website for making the text of Editions 1-4 available for [online viewing](http://www.rtqe.net/ObliqueStrategies/Edition1-3.html) .
+Special thanks to Nick Gasson for creating [xcowsay](http://www.doof.me.uk/xcowsay) as a super-simple way to output text to a screen in a graphical way, to Tony Monroe for creating the original [cowsay](https://github.com/tnalpgge/rank-amateur-cowsay) terminal program, and to [The Oblique Strategies](http://www.rtqe.net/ObliqueStrategies/) website for making the text of Editions 1-4 and more available for [online viewing](http://www.rtqe.net/ObliqueStrategies/Edition1-3.html) .
 
 ## LICENSE
 
