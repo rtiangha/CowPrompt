@@ -1,0 +1,38 @@
+#Template file for 'CowPrompt'
+pkgname=CowPrompt
+version=1.0.1
+revision=1
+wrksrc="${pkgname}-${version}-${revision}"
+depends="xcowsay fortune-mod CowPrompt-data"
+short_desc="display various (writing) prompts on the screen"
+maintainer="Reg Tiangha <reg@reginaldtiangha.com>"
+license="Unlicense"
+homepage="https://github.com/rtiangha/CowPrompt"
+distfiles="https://github.com/rtiangha/${pkgname}/archive/v${version}-${revision}.tar.gz"
+checksum=14d867aba545ef1f660404e24f230ff158cadb36ef3086777dae7745542146f5
+
+do_install() {
+   vbin unix/usr/bin/cowprompt
+   vconf unix/etc/cowprompt.config
+   vman build-debs/cowprompt/debian/cowprompt.6
+   vinstall unix/usr/share/icons/cow_small.png 644 usr/share/icons
+   vinstall unix/usr/share/applications/cowprompt.desktop 644 usr/share/applications
+}
+
+CowPrompt-cli_package() {
+   short_desc+=" - terminal version"
+   depends="cowsay fortune-mod CowPrompt-data"
+   pkg_install() {
+      vbin unix/usr/bin/cowprompt-cli
+      vman build-debs/cowprompt-cli/debian/cowprompt-cli.6
+   }
+}
+
+CowPrompt-data_package() {
+   short_desc="data files for CowPrompt"
+   depends="fortune-mod"
+   pkg_install() {
+      vmkdir usr/share/fortunes
+      vcopy unix/usr/share/games/fortunes/* usr/share/fortunes
+   }
+}

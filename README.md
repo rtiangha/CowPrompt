@@ -56,6 +56,14 @@ CowPrompt can be installed via binary package (.deb and .rpm provided via the [R
 
 `sudo zypper install cowsay fortune`
 
+### Void Linux
+
+`sudo xbps-install xcowsay fortune-mod`
+
+   OR/AND
+
+`sudo xbps-install cowsay fortune-mod`
+
 2. Next, install the **CowPrompt** and **cowprompt-data** packages.
 
 ### DEB-based Distributions (ex. Debian/Ubuntu, etc.)
@@ -77,6 +85,40 @@ and it will automatically fetch any missing dependencies.
    OR/AND
 
 `sudo rpm -ivh cowprompt-cli-<VERSION>.noarch.rpm cowprompt-data-<VERSION>.noarch.rpm`
+
+### Void Linux
+
+You can use either the [XBPS source packages collection](https://github.com/void-linux/void-packages/) to build the packages, or the instructions in the **Other Distributions** section below.
+
+To use the XBPS source packages collection:
+
+Install `xtools`:
+
+`sudo xbps-install xtools`
+
+Clone the XBPS source packages collection directory:
+
+`git clone https://github.com/void-linux/void-packages.git`
+
+Enter the project directory:
+
+`cd void-packages`
+
+Install the bootstrap packages:
+
+`./xbps-src binary-bootstrap`
+
+Copy the contents of `build-void` into `void-packages/srcpkgs`. For example, assuming that the `CowPrompt` and `void-packages` project directories are on the same level:
+
+`cp -ar ../CowPrompt/build-void/* srcpkgs/`
+
+Build the packages:
+
+`./xbps-src pkg CowPrompt`
+
+Install the packages using `xi`
+
+`xi CowPrompt CowPrompt-cli`
 
 ### Other Distributions
 Ensure that `xcowsay` (or/and `cowsay`) and `fortune` are installed in your system (either through your distribution's package manager or by manually compiling it). Then, you can use the included `Makefile` to install/uninstall the various pieces of CowPrompt.
