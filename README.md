@@ -111,7 +111,7 @@ You can install CowPrompt by downloading the binary .zst files from the [Release
 
 #### Install with `PKGBUILD`
 
-Download a copy of the `[PKGBUILD](https://github.com/rtiangha/CowPrompt/blob/main/build-arch/PKGBUILD)` file from the `[build-arch](https://github.com/rtiangha/CowPrompt/tree/main/build-arch)` directory, run:
+Download a copy of the [PKGBUILD](https://github.com/rtiangha/CowPrompt/blob/main/build-arch/PKGBUILD) file from the [build-arch](https://github.com/rtiangha/CowPrompt/tree/main/build-arch)` directory, run:
 
 `makepkg`
 
