@@ -56,6 +56,18 @@ CowPrompt can be installed via binary package (.deb and .rpm provided via the [R
 
 `sudo zypper install cowsay fortune`
 
+### Arch Linux
+
+`cowsay` and `fortune-mod` are available through the standard repositories, while `xcowsay` is available through the [AUR](https://aur.archlinux.org/packages/xcowsay/).
+
+`sudo pacman -S cowsay fortune-mod`
+
+If you're using something like `yay` to access the AUR, you can install `xcowsay` with
+
+`yay -S xcowprompt`
+
+Else, download xcowsay's [PKGBUILD](https://aur.archlinux.org/cgit/aur.git/tree/PKGBUILD?h=xcowsay) file, run `makepkg` and manually install it.
+
 ### Void Linux
 
 `sudo xbps-install xcowsay fortune-mod`
@@ -85,6 +97,26 @@ and it will automatically fetch any missing dependencies.
    OR/AND
 
 `sudo rpm -ivh cowprompt-cli-<VERSION>.noarch.rpm cowprompt-data-<VERSION>.noarch.rpm`
+
+### Arch Linux
+You can install CowPrompt by downloading the binary .zst files from the (Releases)[http://github.com/rtiangha/CowPrompt/releases] page using `pacman` or by downloading the PKGBUILD file and manually creating the packages.
+
+#### Install via `pacman`:
+
+`sudo pacman -U cowprompt-<VERSION>-any.pkg.tar.zst cowprompt-data-<VERSION>-any.pkg.tar.rst`
+
+   OR/AND
+
+`sudo pacman -U cowprommpt-cli-<VERSION>-any.pkg.tar.zst cowprompt-data-<VERSION>-any.pkg.tar.rst`
+
+#### Install with `PKGBUILD`
+
+Download a copy of the `PKGBUILD` file from the `build-arch` directory, run:
+
+`makepkg`
+
+to create the packages, then use the `pacman` instructions above to install the packages.
+
 
 ### Void Linux
 

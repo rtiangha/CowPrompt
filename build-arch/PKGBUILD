@@ -1,0 +1,42 @@
+# Maintainer: Reg Tiangha <reg@reginaldtiangha.com>
+
+pkgbase=cowprompt
+pkgname=('cowprompt-cli' 'cowprompt-data' 'cowprompt')
+pkgver=1.0.1
+pkgrel=1
+pkgdesc="Break through creative blocks with CowPrompt."
+arch=('any')
+url="https://github.com/rtiangha/CowPrompt"
+license=('Unlicense')
+source=("https://github.com/rtiangha/${pkgbase}/archive/v${pkgver}-${pkgrel}.tar.gz")
+sha256sums=('14d867aba545ef1f660404e24f230ff158cadb36ef3086777dae7745542146f5')
+
+package_cowprompt() {
+    depends=('xcowsay' 'fortune-mod' 'cowprompt-data')
+    mkdir -p ${pkgdir}/usr/bin
+    mkdir -p ${pkgdir}/usr/share/applications
+    mkdir -p ${pkgdir}/usr/share/icons
+    mkdir -p ${pkgdir}/usr/share/man/man6
+    cd "${srcdir}/CowPrompt-${pkgver}-${pkgrel}"
+    cp unix/usr/bin/cowprompt ${pkgdir}/usr/bin/
+    cp unix/usr/share/applications/cowprompt.desktop ${pkgdir}/usr/share/applications/
+    cp unix/usr/share/icons/cow_small.png ${pkgdir}/usr/share/icons/
+    cp unix/usr/share/man/man6/cowprompt.6.gz ${pkgdir}/usr/share/man/man6/
+
+}
+
+package_cowprompt-data() {
+    depends=('fortune-mod')
+    mkdir -p ${pkgdir}/usr/share/fortune
+    cd "${srcdir}/CowPrompt-${pkgver}-${pkgrel}"
+    cp unix/usr/share/games/fortunes/* ${pkgdir}/usr/share/fortune/
+}
+
+package_cowprompt-cli() {
+    depends=('cowsay' 'fortune-mod' 'cowprompt-data')
+    mkdir -p ${pkgdir}/usr/bin
+    mkdir -p ${pkgdir}/usr/share/man/man6
+    cd "${srcdir}/CowPrompt-${pkgver}-${pkgrel}"
+    cp -R unix/usr/bin/cowprompt-cli ${pkgdir}/usr/bin/
+    cp -R unix/usr/share/man/man6/cowprompt-cli.6.gz ${pkgdir}/usr/share/man/man6/
+}
