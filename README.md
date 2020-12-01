@@ -111,7 +111,7 @@ You can install CowPrompt by downloading the binary .zst files from the [Release
 
 #### Install with `PKGBUILD`
 
-Download a copy of the [PKGBUILD](https://github.com/rtiangha/CowPrompt/blob/main/build-arch/PKGBUILD) file from the [build-arch](https://github.com/rtiangha/CowPrompt/tree/main/build-arch)` directory, run:
+Download a copy of the [PKGBUILD](https://github.com/rtiangha/CowPrompt/blob/main/build-arch/PKGBUILD) file from the [build-arch](https://github.com/rtiangha/CowPrompt/tree/main/build-arch) directory, run:
 
 `makepkg`
 
@@ -155,7 +155,7 @@ Install the packages using `xi`
 ### Other Distributions
 Ensure that `xcowsay` (or/and `cowsay`) and `fortune` are installed in your system (either through your distribution's package manager or by manually compiling it). Then, you can use the included `Makefile` to install/uninstall the various pieces of CowPrompt.
 
-1. Edit the various Configuration Options in the `Makefile` to point to the proper paths in your file system.
+1. Edit the various Configuration Options in the `Makefile` to point to the proper paths in your file system. For example, the location where `fortune` stores its data files can vary depending on the distribution (ex. `/usr/share/games/forunes` vs. `/usr/share/fortune`).
 2. To install:
 - Install cowprompt:         `make install-cowprompt`
 - Install cowprompt-cli:     `make install-cowprompt-cli`
