@@ -99,7 +99,7 @@ and it will automatically fetch any missing dependencies.
 `sudo rpm -ivh cowprompt-cli-<VERSION>.noarch.rpm cowprompt-data-<VERSION>.noarch.rpm`
 
 ### Arch Linux
-You can install CowPrompt by downloading the binary .zst files from the (Releases)[http://github.com/rtiangha/CowPrompt/releases] page using `pacman` or by downloading the PKGBUILD file and manually creating the packages.
+You can install CowPrompt by downloading the binary .zst files from the [Releases](http://github.com/rtiangha/CowPrompt/releases) page using `pacman` or by downloading the PKGBUILD file and manually creating the packages.
 
 #### Install via `pacman`:
 
@@ -111,7 +111,7 @@ You can install CowPrompt by downloading the binary .zst files from the (Release
 
 #### Install with `PKGBUILD`
 
-Download a copy of the `PKGBUILD` file from the `build-arch` directory, run:
+Download a copy of the `[PKGBUILD](https://github.com/rtiangha/CowPrompt/blob/main/build-arch/PKGBUILD)` file from the `[build-arch](https://github.com/rtiangha/CowPrompt/tree/main/build-arch)` directory, run:
 
 `makepkg`
 
